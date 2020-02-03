@@ -34,5 +34,5 @@ The main findings of the code can be found at the post available [here](https://
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-Must give credit to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/stackoverflow/so-survey-2017/data).  Otherwise, feel free to use the code here as you would like! 
+Credit must be given to Stack Overflow for the data.  You can find the Licensing for the data and other descriptive information [here](https://insights.stackoverflow.com/survey).  Credit should also be given to Udacity for creating the [Data Science](https://www.udacity.com/course/data-scientist-nanodegree--nd025) Nanodegree that this project is part of.
 
