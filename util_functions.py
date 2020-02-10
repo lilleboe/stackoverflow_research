@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-
+# Method taken from Udacity Data Science course: https://www.udacity.com/course/data-scientist-nanodegree--nd025
 def get_description(column_name, schema):
     """
     INPUT - schema - pandas dataframe with the schema of the developers survey
@@ -15,6 +15,7 @@ def get_description(column_name, schema):
     return desc
 
 
+# Method taken from Udacity Data Science course: https://www.udacity.com/course/data-scientist-nanodegree--nd025
 def total_count(df, col1, col2, look_for, delim=';'):
     """
     INPUT:
@@ -41,32 +42,34 @@ def total_count(df, col1, col2, look_for, delim=';'):
     return new_df
 
 
-def clean_and_plot(df, possible_vals, col='LanguageWorkedWith', title='Method of Educating Suggested', plot=True):
+# Inspired by Udacity Data Science course: https://www.udacity.com/course/data-scientist-nanodegree--nd025
+def clean_and_plot(df, possible_vals, col='', title='', plot=True):
     '''
     INPUT
-        df - a dataframe holding the CousinEducation column
+        df - a dataframe holding the column in the col parameter
         possible_vals - list of possible values to search for
+        col - The column to search
         title - string the title of your plot
-        axis - axis object
         plot - bool providing whether or not you want a plot back
 
     OUTPUT
-        study_df - a dataframe with the count of how many individuals
+        new_df - a dataframe with the count of how many individuals
         Displays a plot of pretty things related to the CousinEducation column.
     '''
-    study = df[col].value_counts().reset_index()
-    study.rename(columns={'index': 'method', col: 'count'}, inplace=True)
-    study_df = total_count(study, 'method', 'count', possible_vals)
+    new_df = df[col].value_counts().reset_index()
+    new_df.rename(columns={'index': 'method', col: 'count'}, inplace=True)
+    new_df = total_count(new_df, 'method', 'count', possible_vals)
 
-    study_df.set_index('method', inplace=True)
+    new_df.set_index('method', inplace=True)
     if plot:
-        (study_df / study_df.sum()).plot(kind='bar', legend=None);
+        (new_df / new_df.sum()).plot(kind='bar', legend=None);
         plt.title(title);
         plt.show()
-    props_study_df = study_df / study_df.sum()
-    return props_study_df
+    new_df = new_df / new_df.sum()
+    return new_df
 
 
+#
 def count_lists(df, col, delim=';'):
     """
     INPUT:
