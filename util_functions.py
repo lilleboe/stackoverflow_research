@@ -3,17 +3,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from collections import defaultdict
 
-# Method taken from Udacity Data Science course: https://www.udacity.com/course/data-scientist-nanodegree--nd025
-def get_description(column_name, schema):
-    """
-    INPUT - schema - pandas dataframe with the schema of the developers survey
-            column_name - string - the name of the column you would like to know about
-    OUTPUT -
-            desc - string - the description of the column
-    """
-    desc = list(schema[schema['Column'] == column_name]['QuestionText'])[0]
-    return desc
-
 
 # Method taken from Udacity Data Science course: https://www.udacity.com/course/data-scientist-nanodegree--nd025
 def total_count(df, col1, col2, look_for, delim=';'):
@@ -62,14 +51,13 @@ def clean_and_plot(df, possible_vals, col='', title='', plot=True):
 
     new_df.set_index('method', inplace=True)
     if plot:
-        (new_df / new_df.sum()).plot(kind='bar', legend=None);
-        plt.title(title);
+        (new_df / new_df.sum()).plot(kind='bar', legend=None)
+        plt.title(title)
         plt.show()
     new_df = new_df / new_df.sum()
     return new_df
 
 
-#
 def count_lists(df, col, delim=';'):
     """
     INPUT:
