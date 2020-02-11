@@ -16,17 +16,17 @@ The code was written using the Anaconda distribution of Python and should run wi
 
 ## Project Motivation<a name="motivation"></a>
 
-Data from Stack Overlow from the years 2015-2019 was used to help answer:
+Data from Stack Overlow from the year 2019 was used to help answer:
 
-1. Placeholder
-2. Placeholder
-3. Placeholder
-4. Placeholder
-5. Placeholder
+1. What type(s) of technology do Data Scientists/Machine Learning Specialists use?
+2. What characteristics, if any, distinguish Data Scientists/Machine Learning Specialists from other people that frequent StackOverflow
+3. Can we identify if someone classifies themselves as a Data Scientists/Machine Learning Specialists based on a subset of answers from the StackOverflow survey?
 
 ## File Descriptions <a name="files"></a>
 
-There is an additional `.py` file that runs the necessary code to obtain the final model used to predict salary.
+There are two notebooks that showcase the worked related to the questions above.  Each of the notebooks is exploratory in searching through the data pertaining to the questions showcased by the notebook title. Markdown cells were used to assist in walking through the thought process for individual steps.
+
+There is an additional `.py` file that contains some utility functions utilized in the notebooks.
 
 ## Results<a name="results"></a>
 
