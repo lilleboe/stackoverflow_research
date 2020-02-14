@@ -18,8 +18,7 @@ The code was written using the Anaconda distribution of Python and should run wi
 
 Data from Stack Overflow from the year 2019 was used to help answer:
 
-1. What characteristics, if any, distinguish Data Scientists/Machine Learning Specialists from other people
- that frequent StackOverflow
+1. What are some defining characteristics of a Data Scientists/Machine Learning Specialists?
 2. What type(s) of technologies do Data Scientists/Machine Learning Specialists use?
 3. Can we identify if someone classifies themselves as a Data Scientists/Machine Learning Specialists based 
 on a subset of answers from the Stack Overflow survey?
