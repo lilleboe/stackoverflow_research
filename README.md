@@ -37,7 +37,7 @@ Note: in order to replicate the results, you will need to create a directory nam
 
 ## Results<a name="results"></a>
 
-The main findings of the code can be found at the post available [here](https://medium.com/).
+The main findings of the code can be found at the post available [here](https://medium.com/@scott.lilleboe/can-you-become-a-data-scientist-d0b06611dbeb).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
