@@ -25,9 +25,15 @@ on a subset of answers from the Stack Overflow survey?
 
 ## File Descriptions <a name="files"></a>
 
-There are three notebooks that showcase the worked related to the questions above.  Each of the notebooks are 
-exploratory in searching through the data pertaining to the questions showcased by the notebook title. Markdown cells 
+There are two notebooks that showcase the worked related to the questions above.  Each of the notebooks are 
+exploratory in searching through the data pertaining to the questions showcased in the project motivation section. Markdown cells 
 were used to assist in walking through the thought process for individual steps.
+
+* research.ipynb
+* ds_detector.ipynb
+* charts.xlsx (charts used in the blog post)
+
+Note: in order to replicate the results, you will need to create a directory named "2019" in the same directory the notebooks are located in.  Within this directory, you need to place the 2019 survey results and schema found [here](https://insights.stackoverflow.com/survey).  The file names is "survey_results_public.csv" and "survey_results_schema.csv"
 
 ## Results<a name="results"></a>
 
