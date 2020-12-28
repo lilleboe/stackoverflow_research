@@ -1,4 +1,4 @@
-# stackoverflow_research
+# Stackoverflow Research
 Research of Stack Overflow 2019 survey data to determine characteristics and skills of Data Scientists.
 
 ### Table of Contents
